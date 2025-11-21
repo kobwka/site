@@ -1,0 +1,181 @@
+# site
+Supersite
+<!doctype html>
+
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Venizeois — Услуги • Настройка Wi‑Fi, Дизайн и Поддержка</title>
+  <meta name="description" content="Услуги по настройке Wi‑Fi, универсальный дизайн сайтов и техподдержка. Цены в тенге. Связь: WhatsApp, Telegram, Instagram." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent1:#7c3aed; --accent2:#06b6d4; --glass: rgba(255,255,255,0.04);
+      --muted: #9aa4b2; --white:#eef2ff;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#071026);color:var(--white);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:800;color:white}
+    h1{font-size:28px;margin:0}
+    p.lead{color:var(--muted);margin:6px 0 0}.hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-top:28px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6);}
+
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
+.service{padding:14px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.03)}
+.service h3{margin:0 0 6px;font-size:16px}
+.price{font-weight:700}
+
+.cta{display:flex;gap:10px;margin-top:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white;text-decoration:none;font-weight:600}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--white)}
+
+.contacts{display:flex;flex-direction:column;gap:8px}
+.contact-line{display:flex;align-items:center;gap:10px}
+.icon{width:36px;height:36px;border-radius:9px;background:rgba(255,255,255,0.03);display:flex;align-items:center;justify-content:center}
+
+footer{margin-top:30px;color:var(--muted);font-size:13px;text-align:center}
+
+/* responsive */
+@media (max-width:880px){
+  .hero{grid-template-columns:1fr;}
+  .services{grid-template-columns:1fr}
+  .brand h1{font-size:18px}
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">VZ</div>
+        <div>
+          <h1>Venizeois — IT‑услуги и поддержка</h1>
+          <p class="lead">Быстро. Надёжно. По разумной цене в ₸ (тенге)</p>
+        </div>
+      </div>
+      <nav class="contacts" aria-label="Контакты">
+        <div class="contact-line"><div class="icon">📞</div><a href="tel:+77755026706" style="color:var(--white);text-decoration:none">+7 755 026 706</a></div>
+        <div class="contact-line"><div class="icon">💬</div><a href="https://wa.me/77755026706" target="_blank" rel="noopener" style="color:var(--white);text-decoration:none">WhatsApp</a></div>
+        <div class="contact-line"><div class="icon">✉️</div><a href="https://t.me/venizeois" target="_blank" rel="noopener" style="color:var(--white);text-decoration:none">Telegram — @venizeois</a></div>
+        <div class="contact-line"><div class="icon">📷</div><a href="https://instagram.com/dungeonmaster0" target="_blank" rel="noopener" style="color:var(--white);text-decoration:none">Instagram — @dungeonmaster0</a></div>
+      </nav>
+    </header><section class="hero">
+  <div>
+    <div class="card">
+      <h2 style="margin:0 0 6px">Универсальный дизайн и настройка — быстро и по честной цене</h2>
+      <p style="margin:0;color:var(--muted)">Я делаю понятные, адаптивные сайты и настраиваю локальные сети. Поддержка и консультации — всегда на связи.</p>
+
+      <div class="services" style="margin-top:14px">
+        <div class="service">
+          <h3>Универсальный дизайн сайта</h3>
+          <div class="price">1 500 ₸ — базовая страница / лендинг</div>
+          <div style="color:var(--muted);margin-top:6px">Адаптивный дизайн, оптимизация под мобильные устройства, простая CMS по желанию.</div>
+        </div>
+
+        <div class="service">
+          <h3>Настройка Wi‑Fi / сеть</h3>
+          <div class="price">1 000 ₸ — базовая настройка</div>
+          <div style="color:var(--muted);margin-top:6px">Подключение роутера, настройка пароля, гостевой сети, оптимизация покрытия.</div>
+        </div>
+
+        <div class="service">
+          <h3>Техническая поддержка</h3>
+          <div class="price">от 500 ₸ / обращение</div>
+          <div style="color:var(--muted);margin-top:6px">Поддержка по телефону, удалённо и при выезде (по договорённости).</div>
+        </div>
+
+        <div class="service">
+          <h3>Индивидуальные услуги</h3>
+          <div class="price">по согласованию</div>
+          <div style="color:var(--muted);margin-top:6px">Любой доработки — от интеграций до SEO‑настроек.</div>
+        </div>
+      </div>
+
+      <div class="cta">
+        <a class="btn" href="https://wa.me/77755026706" target="_blank">Написать в WhatsApp</a>
+        <a class="btn ghost" href="https://t.me/venizeois" target="_blank">Telegram</a>
+        <a class="btn ghost" href="tel:+77755026706">Позвонить</a>
+      </div>
+    </div>
+
+    <div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap">
+      <div class="card" style="flex:1;min-width:220px">
+        <h3 style="margin:0 0 6px">Почему выбирают меня</h3>
+        <ul style="margin:0;padding-left:18px;color:var(--muted)">
+          <li>Быстрая связь и понятные цены</li>
+          <li>Честные сроки и аккуратная работа</li>
+          <li>Поддержка после выполнения</li>
+        </ul>
+      </div>
+
+      <div class="card" style="width:220px;min-width:180px;display:flex;flex-direction:column;gap:8px;align-items:flex-start">
+        <h4 style="margin:0">Социальные сети</h4>
+        <a href="https://instagram.com/dungeonmaster0" target="_blank" rel="noopener" class="btn ghost" style="width:100%;justify-content:center">Instagram</a>
+        <a href="https://t.me/venizeois" target="_blank" rel="noopener" class="btn ghost" style="width:100%;justify-content:center">Telegram</a>
+      </div>
+    </div>
+  </div>
+
+  <aside>
+    <div class="card" style="text-align:center">
+      <h3 style="margin-top:0">Заказать сейчас</h3>
+      <p style="color:var(--muted);margin-top:6px">Оставь сообщение — я отвечу в течение часа (рабочее время).</p>
+
+      <div style="display:flex;flex-direction:column;gap:10px;margin-top:12px">
+        <a class="btn" href="https://wa.me/77755026706" target="_blank">WhatsApp</a>
+        <a class="btn ghost" href="https://t.me/venizeois" target="_blank">Написать в Telegram</a>
+        <a class="btn ghost" href="mailto:example@example.com">Email (по желанию)</a>
+      </div>
+
+      <div style="margin-top:14px;color:var(--muted)">
+        <div style="font-weight:700">Номер</div>
+        <div>+7 755 026 706</div>
+        <div style="margin-top:8px">Telegram: @venizeois</div>
+        <div>Instagram: @dungeonmaster0</div>
+      </div>
+    </div>
+
+    <div style="height:12px"></div>
+    <div class="card" style="text-align:left">
+      <h4 style="margin:0 0 8px">Быстрая анкета заказа</h4>
+      <form id="orderForm">
+        <label style="display:block"><small style="color:var(--muted)">Услуга</small>
+          <select id="service" style="width:100%;padding:8px;border-radius:8px;margin-top:6px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--white)">
+            <option value="design">Универсальный дизайн — 1 500 ₸</option>
+            <option value="wifi">Настройка Wi‑Fi — 1 000 ₸</option>
+            <option value="support">Поддержка — от 500 ₸</option>
+          </select>
+        </label>
+        <label style="display:block;margin-top:8px"><small style="color:var(--muted)">Коротко опишите задачу</small>
+          <textarea id="msg" rows="3" style="width:100%;padding:8px;border-radius:8px;margin-top:6px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--white)"></textarea>
+        </label>
+        <button type="button" class="btn" style="margin-top:10px" onclick="submitOrder()">Отправить в WhatsApp</button>
+        <div id="saved" style="color:var(--muted);margin-top:8px;font-size:13px"></div>
+      </form>
+    </div>
+  </aside>
+</section>
+
+<footer>
+  © <span id="year"></span> Venizeois — услуги в тенге • Тел: +7 755 026 706 • Telegram: @venizeois
+</footer>
+
+  </div>  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function submitOrder(){
+      const service = document.getElementById('service').value;
+      const msg = document.getElementById('msg').value.trim();
+      const text = encodeURIComponent(`Заказ с сайта:\nУслуга: ${service}\nОписание: ${msg}`);
+      const wa = `https://wa.me/77755026706?text=${text}`;
+      window.open(wa, '_blank');
+      document.getElementById('saved').textContent = 'Открыто окно WhatsApp — проверьте приложение/браузер.';
+    }
+  </script></body>
+</html>
